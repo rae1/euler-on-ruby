@@ -8,4 +8,10 @@ class Solver
       raise StandardError, "Problem number not implemented"
     end
   end
+
+  private
+
+  def solve_problem_one
+
+  end
 end
