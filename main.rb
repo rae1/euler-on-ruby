@@ -1,1 +1,4 @@
-puts "Hello World!"
+arguments = ARGV
+
+problem = arguments.last
+puts "Problem to solve: ##{problem}"
