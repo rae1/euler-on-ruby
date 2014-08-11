@@ -10,4 +10,7 @@ end
 
 problem = arguments.last.to_i
 solver = Solver.new
-solver.solve(problem)
+solution = solver.solve(problem)
+
+puts "Solution for problem #{problem}: #{solution}"
+
