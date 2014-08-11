@@ -1,4 +1,13 @@
+require_relative 'solver'
+
 arguments = ARGV
 
+unless arguments.size == 2
+  puts "Missing arguments; usage: main.rb --problem <problem>"
+  puts "Enter arguments:"
+  arguments = gets.chomp.split(' ')
+end
+
 problem = arguments.last
-puts "Problem to solve: ##{problem}"
+solver = Solver.new
+solver.solve(problem)

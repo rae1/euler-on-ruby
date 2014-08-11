@@ -1,17 +1,15 @@
+require_relative 'solver_one'
+
 class Solver
-  def solve(problem: 1)
-    case problem
+  def solve(problem)
+    puts "Solving..."
+
+    case problem.to_i
     when 1
-      puts "Solve problem #1"
-      problem
+      solver = SolverOne.new
+      puts "Solution for problem 1: #{solver.solve}"
     else
       raise StandardError, "Problem number not implemented"
     end
-  end
-
-  private
-
-  def solve_problem_one
-
   end
 end
