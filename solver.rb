@@ -4,7 +4,7 @@ class Solver
   def solve(problem)
     puts "Solving..."
 
-    case problem.to_i
+    case problem
     when 1
       solver = SolverOne.new
       puts "Solution for problem 1: #{solver.solve}"
