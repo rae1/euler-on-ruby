@@ -1,3 +1,4 @@
+require_relative 'utils/enumerable_utils'
 require_relative 'utils/multiples_enumerator'
 
 class Solver
@@ -19,18 +20,12 @@ class Solver
   def solve_problem_one
     enumerator = MultiplesEnumerator.new
     multiples = enumerator.enumerate_multiples_of([3, 5], under=1000)
-    sum(multiples)
+    EnumerableUtils::sum(multiples)
   end
 
   def solve_problem_one_example
     enumerator = MultiplesEnumerator.new
     multiples = enumerator.enumerate_multiples_of([3, 5], under=10)
-    sum(multiples)
-  end
-
-  private
-
-  def sum(array)
-    array.reduce { |sum, item| sum + item }
+    EnumerableUtils::sum(multiples)
   end
 end
