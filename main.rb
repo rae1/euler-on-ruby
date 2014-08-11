@@ -8,6 +8,8 @@ unless arguments.size == 2
   arguments = gets.chomp.split(' ')
 end
 
+puts "Solving..."
+
 problem = arguments.last.to_i
 solver = Solver.new
 solution = solver.solve(problem)

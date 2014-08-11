@@ -3,8 +3,6 @@ require_relative 'utils/multiples_enumerator'
 
 class Solver
   def solve(problem)
-    puts "Solving..."
-
     case problem
     when 1
       solution = solve_problem_one
