@@ -1,4 +1,4 @@
-require_relative 'solver'
+require_relative 'lib/solver'
 
 arguments = ARGV
 

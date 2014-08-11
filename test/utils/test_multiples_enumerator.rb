@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative 'multiples_enumerator'
+require_relative '../../lib/utils/multiples_enumerator'
 
 class TestMultiplesEnumerator < Test::Unit::TestCase
   @multiples_enumerator

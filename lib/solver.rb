@@ -1,4 +1,4 @@
-require_relative 'multiples_enumerator'
+require_relative 'utils/multiples_enumerator'
 
 class Solver
   def solve(problem)

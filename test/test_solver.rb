@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative 'solver'
+require_relative '../lib/solver'
 
 class TestSolver < Test::Unit::TestCase
   @solver
