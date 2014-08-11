@@ -12,11 +12,11 @@ class TestSolver < Test::Unit::TestCase
     # Do nothing
   end
 
-  def test_solve_should_choose_problem_number
+  def test_solve_should_choose_problem
     assert_equal(233168, @solver.solve(problem=1))
   end
 
-  def test_solve_should_raise_not_implemented_error
+  def test_solve_should_raise_error
     assert_raise(StandardError) { @solver.solve(problem=798) }
   end
 
