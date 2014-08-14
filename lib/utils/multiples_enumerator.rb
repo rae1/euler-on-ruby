@@ -1,4 +1,4 @@
-require_relative '../extend/fixnum'
+require_relative '../extend/integer'
 
 class MultiplesEnumerator
   def enumerate_multiples_of(numbers=[], under=100)

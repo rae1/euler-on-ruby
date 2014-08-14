@@ -1,4 +1,4 @@
-require_relative 'fixnum'
+require_relative 'integer'
 
 class Integer
   def multiples(under=100)

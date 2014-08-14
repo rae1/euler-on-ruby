@@ -1,8 +1,8 @@
 require 'test/unit'
 
-require_relative '../../lib/extend/fixnum'
+require_relative '../../lib/extend/integer'
 
-class TestFixnum < Test::Unit::TestCase
+class TestInteger < Test::Unit::TestCase
   def test_divisible_by_should_return_boolean
     result = 4.divisible_by?(2)
 
