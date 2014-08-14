@@ -14,4 +14,10 @@ class TestMultiples < Test::Unit::TestCase
 
     assert_equal([], result)
   end
+
+  def test_multiples_should_return_enumerable_of_multiples_for_3
+    result = 3.multiples(under=10)
+
+    assert_equal([3, 6, 9], result)
+  end
 end

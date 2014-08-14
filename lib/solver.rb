@@ -1,5 +1,5 @@
 require_relative 'extend/enumerable'
-require_relative 'utils/multiples_enumerator'
+require_relative 'extend/multiples'
 
 class Solver
   def solve(problem)
@@ -16,14 +16,12 @@ class Solver
   #
   # Find the sum of all the multiples of 3 or 5 below 1000
   def solve_problem_one
-    enumerator = MultiplesEnumerator.new
-    multiples = enumerator.enumerate_multiples_of([3, 5], under=1000)
-    multiples.sum
+    under = 1000
+    3.multiples(under).sum + 5.multiples(under).sum - 15.multiples(under).sum
   end
 
   def solve_problem_one_example
-    enumerator = MultiplesEnumerator.new
-    multiples = enumerator.enumerate_multiples_of([3, 5], under=10)
-    multiples.sum
+    under = 10
+    3.multiples(under).sum + 5.multiples(under).sum
   end
 end
