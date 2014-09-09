@@ -31,4 +31,10 @@ class TestSolver < Test::Unit::TestCase
 
     assert_equal(23, sum)
   end
+
+  def test_solve_problem_two_example
+    sum = @solver.solve_problem_two_example
+
+    assert_equal(44, sum)
+  end
 end
